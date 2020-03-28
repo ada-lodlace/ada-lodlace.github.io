@@ -1,2 +1,2 @@
-# arcangelomas-gmail.com
+# Ada Lodlace
 Knowledge Organization System about Ada Lovelace
