@@ -1,0 +1,22 @@
+.dropdown_button a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant-caps: small-caps;
+    border-bottom: none;
+    padding: 1em;
+}
+.dropdown_button {
+    display: inline-block;
+}
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #5e42a6;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown_content a {
+    display: block;
+}
+.dropdown_button:hover .dropdown_content{
+    display: block;
+}

@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/custom.css">
 	</head>
 	<body class="is-preload">
 
@@ -13,13 +14,23 @@
 			<header id="header">
 				<a href="index.html" class="title">The first algorithm</a>
 				<nav>
-					<ul>
-						<li><a href="e_r_model.html" class="active">E/R Model</a></li>
-						<li><a href="alignment.html">Metadata Alignment</a></li>
-						<li><a href="theoretical_model.html">Theoretical Model</a></li>
-						<li><a href="conceptual_model.html">Conceptual Model</a></li>
-						<li><a href="description_of_data.html">Description of Data</a></li>
-					</ul>
+					<div class="dropdown_button">
+						<a href="#">Knowledge Organization</a>
+						<div class="dropdown_content">
+							<a href="e_r_model.html">E/R Model</a>
+							<a href="alignment.html">Metadata Alignment</a>
+							<a href="theoretical_model.html">Theoretical Model</a>
+							<a href="conceptual_model.html">Conceptual Model</a>
+						</div>
+					</div>
+
+					<div class="dropdown_button">
+						<a href="#" class="dropdown_button">Knowledge Representation</a>
+						<div class="dropdown_content">
+							<a href="description_of_data.html">Description of Data</a>
+							<a href="#">RDF</a>		
+						</div>			
+					</div>
 				</nav>
 			</header>
 

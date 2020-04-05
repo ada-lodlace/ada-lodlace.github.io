@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/custom.css">
 	</head>
 	<body class="is-preload">
 
@@ -13,13 +14,23 @@
 			<header id="header">
 				<a href="index.html" class="title">The first algorithm</a>
 				<nav>
-					<ul>
-						<li><a href="e_r_model.html">E/R Model</a></li>
-						<li><a href="alignment.html">Metadata Alignment</a></li>
-						<li><a href="theoretical_model.html">Theoretical Model</a></li>
-						<li><a href="conceptual_model.html">Conceptual Model</a></li>
-						<li><a href="description_of_data.html" class="active">Description of Data</a></li>
-					</ul>
+					<div class="dropdown_button">
+						<a href="#">Knowledge Organization</a>
+						<div class="dropdown_content">
+							<a href="e_r_model.html">E/R Model</a>
+							<a href="alignment.html">Metadata Alignment</a>
+							<a href="theoretical_model.html">Theoretical Model</a>
+							<a href="conceptual_model.html">Conceptual Model</a>
+						</div>
+					</div>
+
+					<div class="dropdown_button">
+						<a href="#" class="dropdown_button">Knowledge Representation</a>
+						<div class="dropdown_content">
+							<a href="description_of_data.html">Description of Data</a>
+							<a href="#">RDF</a>		
+						</div>			
+					</div>
 				</nav>
 			</header>
 
@@ -35,6 +46,11 @@
 									<h2 class="toc_title">Contents</h2>
 									<ul class="toc_list" style="list-style-type: none;">
 										<li><a href="#prefixes_used">Prefixes used</a></li>
+										<li><a href="#creators">Creators</a>
+											<ul style="list-style-type: none;">
+												<li><a href="#people_ada_lovelace">Augusta Ada King Byron, Countess of Lovelace</a></li>
+											</ul>
+										</li>
 										<li><a href="#material_culture">Material Culture</a>
 											<ul style="list-style-type: none;">
 												<li><a href="#portrait_ada">Painting depicting Ada</a></li>
@@ -62,18 +78,84 @@
 							<h2 id="prefixes_used">Prefixes used</h2>
 							<ul style="list-style-type: circle;">
 								<li>@prefix ada: &lt;<a href="http://ada-lodlace.github.io" target="_blank">http://ada-lodlace.github.io/</a>&gt;.</li>
+								<li>@prefix aat: &lt;<a href="http://vocab.getty.edu/page/aat/" target="_blank">http://vocab.getty.edu/page/aat/</a>&gt;.</li>
 								<li>@prefix crm: &lt;<a href="http://www.cidoc-crm.org/cidoc-crm/" target="_blank">http://www.cidoc-crm.org/cidoc-crm/</a>&gt;.</li>
+								<li>@prefix dbc: &lt;<a href="http://dbpedia.org/resource/Category/" target="_blank">hthttp://dbpedia.org/resource/Category/</a>&gt;.</li>
+								<li>@prefix dbr: &lt;<a href="http://dbpedia.org/resource/" target="_blank">http://dbpedia.org/resource/</a>&gt;.</li>
+								<li>@prefix dc: &lt;<a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a>&gt;.</li>
+								<li>@prefix eac-cpf: &lt;<a href="http://culturalis.org/eac-cpf#" target="_blank">http://culturalis.org/eac-cpf#</a>&gt;.</li>
+								<li>@prefix fabio: &lt;<a href="http://purl.org/spar/fabio" target="_blank">http://purl.org/spar/fabio</a>&gt;.</li>
+								<li>@prefix foaf: &lt;<a href="http://xmlns.com/foaf/0.1/" target="_blank">http://xmlns.com/foaf/0.1/</a>&gt;.</li>		
+								<li>@prefix oad: &lt;<a href="http://culturalis.org/oad#" target="_blank">http://culturalis.org/oad#</a>&gt;.</li>	
+								<li>@prefix oclc: &lt;<a href="http://www.worldcat.org/oclc" target="_blank">http://www.worldcat.org/oclc</a>&gt;.</li>													
 								<li>@prefix rdf: &lt;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>&gt;.</li>
 								<li>@prefix tgn: &lt;<a href="http://vocab.getty.edu/page/tgn/" target="_blank">http://vocab.getty.edu/page/tgn/</a>&gt;.</li>
 								<li>@prefix viaf: &lt;<a href="http://viaf.org/viaf/" target="_blank">http://viaf.org/viaf/</a>&gt;.</li>
 								<li>@prefix xsd: &lt;<a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a>&gt;.</li>
-								<li>@prefix aat: &lt;<a href="http://vocab.getty.edu/page/aat/" target="_blank">http://vocab.getty.edu/page/aat/</a>&gt;.</li>
-								<li>@prefix dbr: &lt;<a href="http://dbpedia.org/resource/" target="_blank">http://dbpedia.org/resource/</a>&gt;.</li>
-								<li>@prefix dbc: &lt;<a href="http://dbpedia.org/resource/Category/" target="_blank">hthttp://dbpedia.org/resource/Category/</a>&gt;.</li>
-								<li>@prefix fabio: &lt;<a href="http://purl.org/spar/fabio" target="_blank">http://purl.org/spar/fabio</a>&gt;.</li>
-								<li>@prefix oad: &lt;<a href="http://culturalis.org/oad#" target="_blank">http://culturalis.org/oad#</a>&gt;.</li>
-								<li>@prefix eac-cpf: &lt;<a href="http://culturalis.org/eac-cpf#" target="_blank">http://culturalis.org/eac-cpf#</a>&gt;.</li>
 							</ul>
+
+							<h2 id="creators">Creators</h2>
+
+								<h3 id="people_ada_lovelace">Augusta Ada King Byron, Countess of Lovelace</h3>
+									<table>
+										<thead>
+											<th>Subject</th>
+											<th>Predicate</th>
+											<th>Object</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td>ada:people_ada_lovelace</td>
+												<td>rdf:type</td>
+												<td>foaf:Person</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>foaf:name</td>
+												<td>“Lovelace, Ada King, Countess of, 1815-1852”^^xsd:string</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>eac-cpf:hasPlace</td>
+												<td>tgn:7002445 # England</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>eac-cpf:existDates</td>
+												<td>“1815-1852”^^xsd:string</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>foaf:knows</td>
+												<td>ada:people_luigi_federico_menabrea</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>foaf:knows</td>
+												<td>ada:people_charles_babbage</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbr:History_of_computing_hardware</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbc:Women_computer_scientists</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbr:Analytical_Engine</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbr:Artificial_intelligence</td>
+											</tr>
+										</tbody>
+									</table>
 
 							<h2 id="material_culture">Material culture</h2>
 
@@ -528,64 +610,49 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_sketch_analytical_engine</td>
+												<td>ada:production_journal_ai</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>“Creativity, the Turing Test, and the (Better) Lovelace Test”</td>
+												<td>ada:journal_ai</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>crm:P14_carried_out_by</td>
-												<td>“Selmer Bringsjord”</td>
+												<td>oad:isProducedBy</td>
+												<td>viaf:17038361 #Mark O. Riedl</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>crm:P14_carried_out_by</td>
-												<td>“David Ferrucci”</td>
+												<td>crm:P4_has_time-span</td>
+												<td>“2014-12-22”^^xsd:date</td>
+											</tr>
+											<tr>
+												<td>ada:journal_ai</td>
+												<td>oad:title</td>
+												<td>“The Lovelace 2.0 Test of Artificial Creativity and Intelligence”^^xsd:string</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>crm:P14_carried_out_by</td>
-												<td>“Paul Bello”</td>
-											</tr>
-											<tr>
-												<td>ada:article_artificial_intelligence</td>
-												<td>dc:title</td>
-												<td>“Creativity, the Turing Test, and the (Better) Lovelace Test”</td>
+												<td>oad:isEntryOf</td>
+												<td>oclc:228652809 # arxiv.org</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:m/categoryOfManifestation.en</td>
+												<td>oad:scopeAndContent</td>
+												<td>dbr:Artificial_intelligence</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>oad:hasExtentType</td>
 												<td>fabio:JournalArticle</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:m/publisherCorporateBody.en</td>
-												<td>“Dordrecht : Kluwer Academic Publishers, c1991-“</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>dc:subject</td>
-												<td>“Artificial Intelligence”</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>rda:i/custodianCorporateBody.en</td>
-												<td>“European University Institute, Fiesole”</td>
-											</tr>
-											<tr>
-												<td>fabio:JournalArticle</td>
-												<td>dc:partOf</td>
-												<td>“Minds and Machines : Journal for Artificial Intelligence, Philosophy and Cognitive Science, v11 n1 (200102): 3-27”</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>cito:CitesAsRelated</td>
-												<td>“The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace.”</td>
+												<td>dc:relation</td>
+												<td>ada:sketch_analytical_engine</td>
 											</tr>
 										</tbody>
 									</table>
