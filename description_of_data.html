@@ -49,6 +49,8 @@
 										<li><a href="#creators">Creators</a>
 											<ul style="list-style-type: none;">
 												<li><a href="#people_ada_lovelace">Augusta Ada King Byron, Countess of Lovelace</a></li>
+												<li><a href="#people_charles_babbage">Babbage, Charles</a></li>
+												<li><a href="#people_luigi_federico_menabrea">Luigi Federico Menabrea</a></li>
 											</ul>
 										</li>
 										<li><a href="#material_culture">Material Culture</a>
@@ -56,6 +58,7 @@
 												<li><a href="#portrait_ada">Painting depicting Ada</a></li>
 												<li><a href="#facsimile_babbage">Obituary portrait of Charles Babbage</a></li>
 												<li><a href="#model_analytical_engine">Analytical Engine's trial model</a></li>
+												<li><a href="#draft_analytical_engine">Draft of the Analytical Engine</a></li>
 											</ul>
 										</li>
 										<li><a href="#bibliographic_culture">Bibliographic Culture</a>
@@ -87,7 +90,11 @@
 								<li>@prefix fabio: &lt;<a href="http://purl.org/spar/fabio" target="_blank">http://purl.org/spar/fabio</a>&gt;.</li>
 								<li>@prefix foaf: &lt;<a href="http://xmlns.com/foaf/0.1/" target="_blank">http://xmlns.com/foaf/0.1/</a>&gt;.</li>		
 								<li>@prefix oad: &lt;<a href="http://culturalis.org/oad#" target="_blank">http://culturalis.org/oad#</a>&gt;.</li>	
-								<li>@prefix oclc: &lt;<a href="http://www.worldcat.org/oclc" target="_blank">http://www.worldcat.org/oclc</a>&gt;.</li>													
+								<li>@prefix oclc: &lt;<a href="http://www.worldcat.org/oclc" target="_blank">http://www.worldcat.org/oclc</a>&gt;.</li>	
+								<li>@prefix owl: &lt;<a href="http://www.w3.org/2002/07/owl#" target="_blank">http://www.w3.org/2002/07/owl#</a>&gt;.</li>	
+								<li>@prefix rdac: &lt;<a href="http://rdaregistry.info/Elements/c/" target="_blank">http://rdaregistry.info/Elements/c/</a>&gt;.</li>
+								<li>@prefix rdai: &lt;<a href="http://rdaregistry.info/Elements/i/" target="_blank">http://rdaregistry.info/Elements/i/</a>&gt;.</li>
+								<li>@prefix rdau: &lt;<a href="http://rdaregistry.info/Elements/u/" target="_blank">http://rdaregistry.info/Elements/u/</a>&gt;.</li>												
 								<li>@prefix rdf: &lt;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>&gt;.</li>
 								<li>@prefix tgn: &lt;<a href="http://vocab.getty.edu/page/tgn/" target="_blank">http://vocab.getty.edu/page/tgn/</a>&gt;.</li>
 								<li>@prefix viaf: &lt;<a href="http://viaf.org/viaf/" target="_blank">http://viaf.org/viaf/</a>&gt;.</li>
@@ -153,6 +160,143 @@
 												<td></td>
 												<td>dc:subject</td>
 												<td>dbr:Artificial_intelligence</td>
+											</tr>
+										</tbody>
+									</table>
+
+								<h3 id="people_charles_babbage">Babbage, Charles</h3>
+									<table>
+										<thead>
+											<th>Subject</th>
+											<th>Predicate</th>
+											<th>Object</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td>&lt;person/charles_babbage&gt;</td>
+												<td>rdf:type</td>
+												<td>foaf:Person</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>foaf:name</td>
+												<td>“Babbage, Charles, 1791-1871.”^^xsd:string</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>eac-cpf:hasPlace</td>
+												<td>tgn:7002445 # England</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>eac-cpf:existDates</td>
+												<td>“1791-1871”^^xsd:string</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>foaf:knows</td>
+												<td>&lt;person/luigi_federico_menabrea&gt;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>foaf:knows</td>
+												<td>&lt;person/ada_lovelace&gt;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbr:History_of_computing_hardware</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbc:Mathematicians_from_London</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbr:Analytical_Engine</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>owl:sameAs</td>
+												<td>dbr:CharlesBabbage</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>owl:sameAs</td>
+												<td>viaf: 4963723</td>
+											</tr>
+										</tbody>
+									</table>
+
+								<h3 id="people_luigi_federico_menabrea">Luigi Federico Menabrea</h3>
+									<table>
+										<thead>
+											<th>Subject</th>
+											<th>Predicate</th>
+											<th>Object</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td>&lt;person/luigi_federico_menabrea&gt;</td>
+												<td>rdf:type</td>
+												<td>foaf:Person</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>foaf:name</td>
+												<td>“Luigi Federico Menabrea, 1809-1896”^^xsd:string</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>eac-cpf:hasPlace</td>
+												<td>tgn:1000080 # Italy</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>eac-cpf:existDates</td>
+												<td>“1809-1896”^^xsd:string</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>foaf:knows</td>
+												<td>&lt;person/charles_babbage&gt;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>foaf:knows</td>
+												<td>&lt;person/ada_lovelace&gt;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbr:History_of_computing_hardware</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbc:Italian_mathematicians</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbr:Analytical_Engine</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>dc:subject</td>
+												<td>dbc:Prime_Ministers_of_Italy</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>owl:sameAs</td>
+												<td>dbr:Luigi_Federico_Menabrea</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>owl:sameAs</td>
+												<td>viaf:50029341</td>
 											</tr>
 										</tbody>
 									</table>
@@ -334,6 +478,64 @@
 												<td></td>
 												<td>crm:P62_depicts</td>
 												<td>dbr:Analytical_Engine</td>
+											</tr>
+										</tbody>
+									</table>
+
+								<h3 id="draft_analytical_engine">Draft of the Analytical Engine</h3>
+									<table>
+										<thead>
+											<tr>
+												<th>Subject</th>
+												<th>Predicate</th>
+												<th>Object</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>&lt;production/draft_analytical_engine&gt;</td>
+												<td>rdf:type</td>
+												<td>crm:E12_Production</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>crm:P108_has_produced</td>
+												<td>&lt;object/draft_analytical_engine&gt;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>crm:P7_took_place_at</td>
+												<td>tgn:7002445 # England</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>crm:P14_carried_out_by</td>
+												<td>&lt;person/charles_babbage&gt;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>crm:P4_has_time-span</td>
+												<td>“1833-1848”^^xsd:string</td>
+											</tr>
+											<tr>
+												<td>&lt;object/model_analytical_engine&gt;</td>
+												<td>crm:P102_has_title</td>
+												<td>“Analytical Engine Plan 28. Scale 1/6. Draft”^^xsd:string</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>crm:P2_has_type</td>
+												<td>aat:300026931 #drafts</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>crm:P50_has_current_keeper</td>
+												<td>viaf:130803673 # Science Museum (Great Britain)</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>crm:P62_depicts</td>
+												<td>object/model_analytical_engine</td>
 											</tr>
 										</tbody>
 									</table>
