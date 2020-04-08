@@ -77,7 +77,7 @@
 
 							<h2 id="prefixes_used">Prefixes used</h2>
 							<ul style="list-style-type: circle;">
-								<li>@prefix ada: &lt;<a href="http://ada-lodlace.github.io" target="_blank">http://ada-lodlace.github.io/</a>&gt;.</li>
+								<li>@base: &lt;<a href="http://ada-lodlace.github.io" target="_blank">http://ada-lodlace.github.io/</a>&gt;.</li>
 								<li>@prefix aat: &lt;<a href="http://vocab.getty.edu/page/aat/" target="_blank">http://vocab.getty.edu/page/aat/</a>&gt;.</li>
 								<li>@prefix crm: &lt;<a href="http://www.cidoc-crm.org/cidoc-crm/" target="_blank">http://www.cidoc-crm.org/cidoc-crm/</a>&gt;.</li>
 								<li>@prefix dbc: &lt;<a href="http://dbpedia.org/resource/Category/" target="_blank">hthttp://dbpedia.org/resource/Category/</a>&gt;.</li>
@@ -105,7 +105,7 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:people_ada_lovelace</td>
+												<td>&lt;person/ada_lovelace&gt;</td>
 												<td>rdf:type</td>
 												<td>foaf:Person</td>
 											</tr>
@@ -127,12 +127,12 @@
 											<tr>
 												<td></td>
 												<td>foaf:knows</td>
-												<td>ada:people_luigi_federico_menabrea</td>
+												<td>&lt;person/luigi_federico_menabrea&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>foaf:knows</td>
-												<td>ada:people_charles_babbage</td>
+												<td>&lt;person/charles_babbage&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -170,14 +170,14 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_portrait_ada</td>
+												<td>&lt;production/portrait_ada&gt;</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>ada:portrait_ada</td>
+												<td>&lt;object/portrait_ada&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -195,7 +195,7 @@
 												<td>“1840”^^xsd:gYear</td>
 											</tr>
 											<tr>
-												<td>ada:portrait_ada</td>
+												<td>&lt;object/portrait_ada&gt;</td>
 												<td>crm:P102_has_title</td>
 												<td>“Portrait of Ada, Countess of Lovelace”^^xsd:string</td>
 											</tr>
@@ -217,7 +217,7 @@
 											<tr>
 												<td></td>
 												<td>crm:P62_depicts</td>
-												<td>ada:people_ada_lovelace</td>
+												<td>&lt;person/ada_lovelace&gt;</td>
 											</tr>
 										</tbody>
 									</table>
@@ -233,14 +233,14 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_facsimile_babbage</td>
+												<td>&lt;production/facsimile_babbage&gt;</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>ada:facsimile_babbage</td>
+												<td>&lt;object/facsimile_babbage&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -253,7 +253,7 @@
 												<td>“1871-11-04”^^xsd:date</td>
 											</tr>
 											<tr>
-												<td>ada:facsimile_babbage</td>
+												<td>&lt;object/facsimile_babbage&gt;</td>
 												<td>crm:P102_has_title</td>
 												<td>“Portrait of Charles Babbage”^^xsd:string</td>
 											</tr>
@@ -270,7 +270,7 @@
 											<tr>
 												<td></td>
 												<td>crm:P62_depicts</td>
-												<td>ada:people_charles_babbage</td>
+												<td>&lt;person/charles_babbage&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -291,14 +291,14 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_model_analytical_engine</td>
+												<td>&lt;production/model_analytical_engine&gt;</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>ada:model_analytical_engine</td>
+												<td>&lt;object/model_analytical_engine&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -308,7 +308,7 @@
 											<tr>
 												<td></td>
 												<td>crm:P14_carried_out_by</td>
-												<td>ada:people_charles_babbage</td>
+												<td>&lt;person/charles_babbage&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -316,7 +316,7 @@
 												<td>“1871”^^xsd:gYear</td>
 											</tr>
 											<tr>
-												<td>ada:model_analytical_engine</td>
+												<td>&lt;object/model_analytical_engine&gt;</td>
 												<td>crm:P102_has_title</td>
 												<td>“Babbage's Analytical Engine, 1834-1871. (Trial model)”^^xsd:string</td>
 											</tr>
@@ -351,14 +351,14 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_sketch_analytical_engine</td>
+												<td>&lt;production/sketch_analytical_engine&gt;</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>ada:sketch_analytical_engine</td>
+												<td>&lt;object/sketch_analytical_engine&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -368,7 +368,7 @@
 											<tr>
 												<td></td>
 												<td>crm:P14_carried_out_by</td>
-												<td>ada:people_luigi_federico_menabrea</td>
+												<td>&lt;person/luigi_federico_menabrea&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -376,7 +376,7 @@
 												<td>“1843”^^xsd:gYear</td>
 											</tr>
 											<tr>
-												<td>ada:sketch_analytical_engine</td>
+												<td>&lt;object/sketch_analytical_engine&gt;</td>
 												<td>rda:i/titleOfItem.en</td>
 												<td>“Sketch of the Analytical Engine invented by Charles Babbage ... with notes by the translator. Extracted from the 'Scientific Memoirs, ' etc.”^^xsd:string</td>
 											</tr>
@@ -398,7 +398,7 @@
 											<tr>
 												<td></td>
 												<td>rda:u/subject.en</td>
-												<td>ada:people_charles_babbage</td>
+												<td>&lt;person/charles_babbage&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -408,12 +408,12 @@
 											<tr>
 												<td></td>
 												<td>rda:u/translator.en,</td>
-												<td>ada:people_ada_lovelace</td>
+												<td>&lt;person/ada_lovelace&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>rda:u/annotator.en</td>
-												<td>ada:people_ada_lovelace</td>
+												<td>&lt;person/ada_lovelace&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -434,19 +434,19 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_letter</td>
+												<td>&lt;production/letter&gt;</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>ada:letter</td>
+												<td>&lt;object/letter&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P14_carried_out_by</td>
-												<td>ada:people_ada_lovelace</td>
+												<td>&lt;person/ada_lovelace&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -459,7 +459,7 @@
 												<td>“1844”^^xsd:gYear</td>
 											</tr>
 											<tr>
-												<td>ada:letter</td>
+												<td>&lt;object/letter&gt;</td>
 												<td>rda:i/titleOfItem.en</td>
 												<td>‘Autograph letter signed with initials: Ashley Combe, to "my dear Babbage", "Sunday"’^^xsd:string</td>
 											</tr>
@@ -471,7 +471,7 @@
 											<tr>
 												<td></td>
 												<td>rda:i/relatedPersonOfItem.en</td>
-												<td>ada:people_charles_babbage</td>
+												<td>&lt;person/charles_babbage&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -492,14 +492,14 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_movie_ada</td>
+												<td>&lt;production/movie_ada&gt;</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>ada:movie_ada</td>
+												<td>&lt;ada/movie_ada&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -517,7 +517,7 @@
 												<td>“1999”^^xsd:gYear</td>
 											</tr>
 											<tr>
-												<td>ada:movie_ada</td>
+												<td>&lt;ada/movie_ada&gt;</td>
 												<td>rda:i/titleOfItem.en</td>
 												<td>“Conceiving Ada”^^xsd:string</td>
 											</tr>
@@ -534,7 +534,7 @@
 											<tr>
 												<td></td>
 												<td>rda:u/subject.en</td>
-												<td>ada:people_ada_lovelace</td>
+												<td>&lt;person/ada_lovelace&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -562,17 +562,17 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_photograph_menabrea</td>
+												<td>&lt;production/photograph_menabrea&gt;</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>ada:photograph_menabrea</td>
+												<td>&lt;object/photograph_menabrea&gt;</td>
 											</tr>
 											<tr>
-												<td>ada:photograph_menabrea</td>
+												<td>&lt;object/photograph_menabrea&gt;</td>
 												<td>oad:title</td>
 												<td>“Menabrea Luigi Federico”^^xsd:string</td>
 											</tr>
@@ -594,7 +594,7 @@
 											<tr>
 												<td></td>
 												<td>eac-cpf:involves</td>
-												<td>ada:people_luigi_federico_menabrea</td>
+												<td>&lt;person/luigi_federico_menabrea&gt;</td>
 											</tr>
 										</tbody>
 									</table>
@@ -610,14 +610,14 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_journal_ai</td>
+												<td>&lt;production/journal_ai&gt;</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>ada:journal_ai</td>
+												<td>&lt;object/journal_ai&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -630,7 +630,7 @@
 												<td>“2014-12-22”^^xsd:date</td>
 											</tr>
 											<tr>
-												<td>ada:journal_ai</td>
+												<td>&lt;object/journal_ai&gt;</td>
 												<td>oad:title</td>
 												<td>“The Lovelace 2.0 Test of Artificial Creativity and Intelligence”^^xsd:string</td>
 											</tr>
@@ -652,7 +652,7 @@
 											<tr>
 												<td></td>
 												<td>dc:relation</td>
-												<td>ada:sketch_analytical_engine</td>
+												<td>&lt;object/sketch_analytical_engine&gt;</td>
 											</tr>
 										</tbody>
 									</table>
@@ -668,14 +668,14 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>ada:production_doodle</td>
+												<td>&lt;production/doodle&gt;</td>
 												<td>rdf:type</td>
 												<td>crm:E12_Production</td>
 											</tr>
 											<tr>
 												<td></td>
 												<td>crm:P108_has_produced</td>
-												<td>ada:doodle</td>
+												<td>&lt;object/doodle&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -688,7 +688,7 @@
 												<td>“2012”^^xsd:gYear</td>
 											</tr>
 											<tr>
-												<td>ada:doodle</td>
+												<td>&lt;object/doodle&gt;</td>
 												<td>oad:title</td>
 												<td>“Ada Lovelace’s 197th Birthday”^^xsd:string</td>
 											</tr>
@@ -705,7 +705,7 @@
 											<tr>
 												<td></td>
 												<td>eac-cpf:involves</td>
-												<td>ada:people_ada_lovelace</td>
+												<td>&lt;person/ada_lovelace&gt;</td>
 											</tr>
 										</tbody>
 									</table>
