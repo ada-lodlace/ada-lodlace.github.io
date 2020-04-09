@@ -1,0 +1,90 @@
+@base <http://ada-lodlace.github.io/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbc: <hthttp://dbpedia.org/resource/Category/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix eac-cpf: <http://culturalis.org/eac-cpf#>.
+@prefix fabio: <http://purl.org/spar/fabio>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix lccn: <https://lccn.loc.gov/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdac: <http://rdaregistry.info/Elements/c/>.
+@prefix rdai: <http://rdaregistry.info/Elements/i/>.
+@prefix rdau: <http://rdaregistry.info/Elements/u/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2008/05/skos#>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+@prefix viaf: <http://viaf.org/viaf/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+<production/sketch_analytical_engine>
+	rdf:type crm:E12_Production;
+	crm:P108_has_produced <object/sketch_analytical_engine>;
+	crm:P7_took_place_at tgn:7002445; # London
+	crm:P14_carried_out_by <person/luigi_federico_menabrea>;
+	crm:P4_has_time-span "1843"^^xsd:gYear.
+
+
+<object/sketch_analytical_engine>
+	rdf:type rdac:Item.en;
+	rdai:titleOfItem.en "Sketch of the Analytical Engine invented by Charles Babbage ... with notes by the translator. Extracted from the 'Scientific Memoirs,.'etc."^^xsd:string;
+	rdai:categoryOfItem.en fabio:Book;
+	rdau:publisher.en viaf:129445994; #R. & J. E. Taylor;
+	rdau:subject.en dbr:Analytical_Engine, <person/charles_babbage>;
+	rdai:custodianCorporateBody.en viaf:121814978;
+	rdau:translator.en <person/ada_lovelace>;
+	rdau:annotator.en <person/ada_lovelace>;
+	rdau:notesOnItem.en "The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace in which she describes the first algorithm in history."^^xsd:string.
+
+
+<person/ada_lovelace>	
+	rdf:type foaf:Person;
+	foaf:name "Lovelace, Ada King, Countess of, 1815-1852"^^xsd:string;
+	owl:sameAs viaf:61632881;
+	owl:sameAs dbr:Ada_lovelace;
+	eac-cpf:hasPlace tgn:7002445; #London
+	eac-cpf:existDates "1815-1852"^^xsd:string;
+	foaf:knows <person/luigi_federico_menabrea>, <person/charles_babbage>;
+	dc:subject dbr:History_of_computing_hardware, dbr:Analytical_Engine, dbr:Artificial_intelligence;
+	foaf:isPrimaryTopicOf dbr:Ada_Lovelace.
+
+
+<person/luigi_federico_menabrea>
+	rdf:type foaf:Person;
+	foaf:name "Luigi Federico Menabrea, 1809-1896"^^xsd:string;
+	owl:sameAs viaf:50029341;
+	owl:sameAs dbr:Luigi_Federico_Menabrea;
+	eac-cpf:hasPlace tgn:1000080; # Italy
+	eac-cpf:existDates "1809-1896"^^xsd:string;
+	foaf:knows <person/ada_lovelace>, <person/charles_babbage>;
+	dc:subject dbr:History_of_computing_hardware, dbc:Italian_mathematicians, dbr:Analytical_Engine, dbc:Prime_Ministers_of_Italy;
+	dc:relation dbr:Analytical_Engine;
+	foaf:isPrimaryTopicOf dbr:Ada_Lovelace.
+
+
+<person/charles_babbage>
+	rdf:type foaf:Person;
+	foaf:name "Babbage, Charles, 1791-1871"^^xsd:string;
+	owl:sameAs viaf:4963723;
+	owl:sameAs dbr:CharlesBabbage;
+	eac-cpf:hasPlace tgn:7002445; # England
+	eac-cpf:existDates "1791-1871"^^xsd:string;
+	foaf:knows <person/ada_lovelace>, <person/luigi_federico_menabrea>;
+	dc:subject dbr:History_of_computing_hardware, dbc:Mathematicians_from_London, dbr:Analytical_Engine;
+	dc:relation dbr:Analytical_Engine;
+	foaf:isPrimaryTopicOf dbr:Ada_Lovelace.
+
+
+<concept/analytical_engine> 
+	owl:Class skos:Concept;
+	owl:sameAs dbr:Analytical Engine;
+	skos:broader lccn:sh2008101514, dbc:English_inventions, dbc:Mechanical_calculators, dbc:Mechanical_computers, dbc:One-of-a-kind_computers; 
+	rdf:label "Analytical Engine"^^xsd:string;
+	rdfs:comment "The Analytical Engine was a proposed mechanical general-purpose computer designed by English mathematician and computer pioneer Charles Babbage. It was first described in 1837 as the successor to Babbage's difference engine, a design for a simpler mechanical computer. Babbage was never able to complete construction of any of his machines due to conflicts with his chief engineer and inadequate funding. It was not until 1941 that the first general-purpose computer, Z3, was actually built, more than a century after Babbage had proposed the pioneering Analytical Engine in 1837.";
+	dc:creator <person/charles_babbage>;
+	foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Analytical_Engine>.
+
+
+	

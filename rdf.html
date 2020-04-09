@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The first algorithm - E/R model</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/custom.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">The first algorithm</a>
+				<nav>
+					<div class="dropdown_button">
+						<a href="#">Knowledge Organization</a>
+						<div class="dropdown_content">
+							<a href="e_r_model.html">E/R Model</a>
+							<a href="alignment.html">Metadata Alignment</a>
+							<a href="theoretical_model.html">Theoretical Model</a>
+							<a href="conceptual_model.html">Conceptual Model</a>
+						</div>
+					</div>
+
+					<div class="dropdown_button">
+						<a href="#" class="dropdown_button">Knowledge Representation</a>
+						<div class="dropdown_content">
+							<a href="description_of_data.html">Description of Data</a>
+							<a href="rdf.html">RDF</a>		
+						</div>			
+					</div>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">RDF</h1>
+							<p>We have chosen to represent in RDF the item that more than the others was able to connect people, places, dates and concepts, that is the <em>Sketch of the Analytical Engine</em>, the book written by Menabrea on Babbage's <em>Analytical Engine</em> and translated by Ada Lovelace.</p>
+							<p>Turtle was chosen as a serialization of RDF.</p>
+							<p>View the raw file: <a href="rdf_turtle.ttl" download="ada-lodlace_turtle.ttl" target="_blank">sketch_analytical_engine.ttl</a></p>
+							<pre style="background-color:antiquewhite">
+								<code class="prettyprint">
+@base &lt;http://ada-lodlace.github.io/&gt;.
+@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt;.
+@prefix dbc: &lt;hthttp://dbpedia.org/resource/Category/&gt;.
+@prefix dbr: &lt;http://dbpedia.org/resource/&gt;.
+@prefix dc: &lt;http://purl.org/dc/terms/&gt;.
+@prefix eac-cpf: &lt;http://culturalis.org/eac-cpf#&gt;.
+@prefix fabio: &lt;http://purl.org/spar/fabio&gt;.
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt;.
+@prefix lccn: &lt;https://lccn.loc.gov/&gt;.
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt;.
+@prefix rdac: &lt;http://rdaregistry.info/Elements/c/&gt;.
+@prefix rdai: &lt;http://rdaregistry.info/Elements/i/&gt;.
+@prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt;.
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;.
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
+@prefix skos: &lt;http://www.w3.org/2008/05/skos#&gt;.
+@prefix tgn: &lt;http://vocab.getty.edu/page/tgn/&gt;.
+@prefix viaf: &lt;http://viaf.org/viaf/&gt;.
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;.
+
+
+&lt;production/sketch_analytical_engine&gt;
+	rdf:type crm:E12_Production;
+	crm:P108_has_produced &lt;object/sketch_analytical_engine&gt;;
+	crm:P7_took_place_at tgn:7002445; # London
+	crm:P14_carried_out_by &lt;person/luigi_federico_menabrea&gt;;
+	crm:P4_has_time-span "1843"^^xsd:gYear.
+
+
+&lt;object/sketch_analytical_engine&gt;
+	rdf:type rdac:Item.en;
+	rdai:titleOfItem.en "Sketch of the Analytical Engine invented by Charles Babbage ... 
+			     with notes by the translator. Extracted from the 'Scientific Memoirs,.'etc."^^xsd:string;
+	rdai:categoryOfItem.en fabio:Book;
+	rdau:publisher.en viaf:129445994; #R. & J. E. Taylor;
+	rdau:subject.en dbr:Analytical_Engine, &lt;person/charles_babbage&gt;;
+	rdai:custodianCorporateBody.en viaf:121814978;
+	rdau:translator.en &lt;person/ada_lovelace&gt;;
+	rdau:annotator.en &lt;person/ada_lovelace&gt;;
+	rdau:notesOnItem.en "The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace in which she describes 
+			    the first algorithm in history."^^xsd:string.
+
+
+&lt;person/ada_lovelace&gt;	
+	rdf:type foaf:Person;
+	foaf:name "Lovelace, Ada King, Countess of, 1815-1852"^^xsd:string;
+	owl:sameAs viaf:61632881;
+	owl:sameAs dbr:Ada_lovelace;
+	eac-cpf:hasPlace tgn:7002445; #London
+	eac-cpf:existDates "1815-1852"^^xsd:string;
+	foaf:knows &lt;person/luigi_federico_menabrea&gt;, &lt;person/charles_babbage&gt;;
+	dc:subject dbr:History_of_computing_hardware, dbr:Analytical_Engine, dbr:Artificial_intelligence;
+	foaf:isPrimaryTopicOf dbr:Ada_Lovelace.
+
+
+&lt;person/luigi_federico_menabrea&gt;
+	rdf:type foaf:Person;
+	foaf:name "Luigi Federico Menabrea, 1809-1896"^^xsd:string;
+	owl:sameAs viaf:50029341;
+	owl:sameAs dbr:Luigi_Federico_Menabrea;
+	eac-cpf:hasPlace tgn:1000080; # Italy
+	eac-cpf:existDates "1809-1896"^^xsd:string;
+	foaf:knows &lt;person/ada_lovelace&gt;, &lt;person/charles_babbage&gt;;
+	dc:subject dbr:History_of_computing_hardware, dbc:Italian_mathematicians, dbr:Analytical_Engine, 
+		   dbc:Prime_Ministers_of_Italy;
+	dc:relation dbr:Analytical_Engine;
+	foaf:isPrimaryTopicOf dbr:Ada_Lovelace.
+
+
+&lt;person/charles_babbage&gt;
+	rdf:type foaf:Person;
+	foaf:name "Babbage, Charles, 1791-1871"^^xsd:string;
+	owl:sameAs viaf:4963723;
+	owl:sameAs dbr:CharlesBabbage;
+	eac-cpf:hasPlace tgn:7002445; # England
+	eac-cpf:existDates "1791-1871"^^xsd:string;
+	foaf:knows &lt;person/ada_lovelace&gt;, &lt;person/luigi_federico_menabrea&gt;;
+	dc:subject dbr:History_of_computing_hardware, dbc:Mathematicians_from_London, dbr:Analytical_Engine;
+	dc:relation dbr:Analytical_Engine;
+	foaf:isPrimaryTopicOf dbr:Ada_Lovelace.
+
+
+&lt;concept/analytical_engine&gt; 
+	owl:Class skos:Concept;
+	owl:sameAs dbr:Analytical Engine;
+	skos:broader lccn:sh2008101514, dbc:English_inventions, dbc:Mechanical_calculators, dbc:Mechanical_computers, 
+		     dbc:One-of-a-kind_computers; 
+	rdf:label "Analytical Engine"^^xsd:string;
+	rdfs:comment "The Analytical Engine was a proposed mechanical general-purpose computer designed by English mathematician 
+		      and computer pioneer Charles Babbage. It was first described in 1837 as the successor to 
+		      Babbage's difference engine, a design for a simpler mechanical computer. 
+		      Babbage was never able to complete construction of any of his machines 
+		      due to conflicts with his chief engineer and inadequate funding. 
+		      It was not until 1941 that the first general-purpose computer, Z3, was actually built, 
+		      more than a century after Babbage had proposed the pioneering Analytical Engine in 1837.";
+	dc:creator &lt;person/charles_babbage&gt;;
+	foaf:isPrimaryTopicOf &lt;https://en.wikipedia.org/wiki/Analytical_Engine&gt;.	
+								</code>
+							</pre>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; The first algorithm. All rights reserved.</li><li>Design: Arcangelo Massari, Cristian Santini, Andrea Schimmenti</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script type="text/javascript" src="https://app.diagrams.net/js/viewer.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	</body>
+</html>
