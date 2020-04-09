@@ -20,3 +20,6 @@
 .dropdown_button:hover .dropdown_content{
     display: block;
 }
+.active-link {
+    color: aliceblue;
+}
