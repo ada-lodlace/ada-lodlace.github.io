@@ -61,7 +61,7 @@
 	foaf:knows <person/ada_lovelace>, <person/charles_babbage>;
 	dc:subject dbr:History_of_computing_hardware, dbc:Italian_mathematicians, dbr:Analytical_Engine, dbc:Prime_Ministers_of_Italy;
 	dc:relation dbr:Analytical_Engine;
-	foaf:isPrimaryTopicOf dbr:Ada_Lovelace.
+	foaf:isPrimaryTopicOf dbr:Luigi_Federico_Menabrea.
 
 
 <person/charles_babbage>
@@ -74,15 +74,17 @@
 	foaf:knows <person/ada_lovelace>, <person/luigi_federico_menabrea>;
 	dc:subject dbr:History_of_computing_hardware, dbc:Mathematicians_from_London, dbr:Analytical_Engine;
 	dc:relation dbr:Analytical_Engine;
-	foaf:isPrimaryTopicOf dbr:Ada_Lovelace.
+	foaf:isPrimaryTopicOf dbr:Charles_Babbage.
 
 
 <concept/analytical_engine> 
-	owl:Class skos:Concept;
-	owl:sameAs dbr:Analytical Engine;
+	owl:Class crm:E73_Information_Object;
+	rdfs:subClassOf skos:Concept;
+	owl:sameAs dbr:Analytical_Engine;
 	skos:broader lccn:sh2008101514, dbc:English_inventions, dbc:Mechanical_calculators, dbc:Mechanical_computers, dbc:One-of-a-kind_computers; 
 	rdf:label "Analytical Engine"^^xsd:string;
 	rdfs:comment "The Analytical Engine was a proposed mechanical general-purpose computer designed by English mathematician and computer pioneer Charles Babbage. It was first described in 1837 as the successor to Babbage's difference engine, a design for a simpler mechanical computer. Babbage was never able to complete construction of any of his machines due to conflicts with his chief engineer and inadequate funding. It was not until 1941 that the first general-purpose computer, Z3, was actually built, more than a century after Babbage had proposed the pioneering Analytical Engine in 1837.";
+	<http://purl.org/linguistics/gold/hypernym> lccn:sh85029552; # Computers
 	dc:creator <person/charles_babbage>;
 	foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Analytical_Engine>.
 

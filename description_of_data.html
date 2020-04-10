@@ -93,7 +93,8 @@
 								<li>@prefix oclc: &lt;<a href="http://www.worldcat.org/oclc" target="_blank">http://www.worldcat.org/oclc</a>&gt;.</li>	
 								<li>@prefix owl: &lt;<a href="http://www.w3.org/2002/07/owl#" target="_blank">http://www.w3.org/2002/07/owl#</a>&gt;.</li>	
 								<li>@prefix rdac: &lt;<a href="http://rdaregistry.info/Elements/c/" target="_blank">http://rdaregistry.info/Elements/c/</a>&gt;.</li>
-								<li>@prefix rdai: &lt;<a href="http://rdaregistry.info/Elements/i/" target="_blank">http://rdaregistry.info/Elements/i/</a>&gt;.</li>
+								<li>@prefix rdaio: &lt;<a href="http://rdaregistry.info/Elements/i/object/" target="_blank">http://rdaregistry.info/Elements/i/object/</a>&gt;.</li>
+								<li>@prefix rdaid: &lt;<a href="http://rdaregistry.info/Elements/i/datatype/" target="_blank">http://rdaregistry.info/Elements/i/datatype/</a>&gt;.</li>
 								<li>@prefix rdau: &lt;<a href="http://rdaregistry.info/Elements/u/" target="_blank">http://rdaregistry.info/Elements/u/</a>&gt;.</li>												
 								<li>@prefix rdf: &lt;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>&gt;.</li>
 								<li>@prefix tgn: &lt;<a href="http://vocab.getty.edu/page/tgn/" target="_blank">http://vocab.getty.edu/page/tgn/</a>&gt;.</li>
@@ -560,7 +561,7 @@
 											<tr>
 												<td></td>
 												<td>crm:P7_took_place_at</td>
-												<td>tgn:7002445 # England</td>
+												<td>tgn:7002445 # London</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -574,48 +575,53 @@
 											</tr>
 											<tr>
 												<td>&lt;object/sketch_analytical_engine&gt;</td>
-												<td>rda:i/titleOfItem.en</td>
+												<td>rdf:type</td>
+												<td>rdac:Item.en</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>rdaid:titleOfItem.en</td>
 												<td>“Sketch of the Analytical Engine invented by Charles Babbage ... with notes by the translator. Extracted from the 'Scientific Memoirs, ' etc.”^^xsd:string</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:i/categoryOfItem.en</td>
+												<td>rdaio:categoryOfItem.en</td>
 												<td>fabio:Book</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:u/publisher.en</td>
+												<td>rdau:publisher.en</td>
 												<td>viaf:129445994 # R. & J. E. Taylor</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:u/subject.en</td>
+												<td>rdau:subject.en</td>
 												<td>dbr:Analytical_Engine</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:u/subject.en</td>
+												<td>rdau:subject.en</td>
 												<td>&lt;person/charles_babbage&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:i/custodianCorporateBody.en</td>
+												<td>rdaio:custodianCorporateBody.en</td>
 												<td>viaf:121814978 # British Library, London</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:u/translator.en,</td>
+												<td>rdau:translator.en</td>
 												<td>&lt;person/ada_lovelace&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:u/annotator.en</td>
+												<td>rdau:annotator.en</td>
 												<td>&lt;person/ada_lovelace&gt;</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:u/notesOnItem.en</td>
-												<td>“The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace.”^^xsd:string</td>
+												<td>rdau:notesOnItem.en</td>
+												<td>“The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace in which she describes the first algorithm in history.”^^xsd:string</td>
 											</tr>
 										</tbody>
 									</table>
@@ -657,22 +663,32 @@
 											</tr>
 											<tr>
 												<td>&lt;object/letter&gt;</td>
-												<td>rda:i/titleOfItem.en</td>
-												<td>‘Autograph letter signed with initials: Ashley Combe, to "my dear Babbage", "Sunday"’^^xsd:string</td>
+												<td>rdf:type</td>
+												<td>rdac:Item.en</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:i/categoryOfItem.en</td>
+												<td>rdaid:titleOfItem.en</td>
+												<td>‘Autograph letter signed : Ashley-Combe, to [Charles Babbage?], "Tuesday" [1844?] Oct. 22 ’^^xsd:string</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>rdaio:categoryOfItem.en</td>
 												<td>fabio:Letter</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:i/relatedPersonOfItem.en</td>
+												<td>rdaio:relatedPersonOfItem.en</td>
 												<td>&lt;person/charles_babbage&gt;</td>
+											</tr>
+												<tr>
+												<td></td>
+												<td>rdaio:containedInItem.en</td>
+												<td>oclc:270134641 # Collection of autograph signed letters by Lord Byron, Lady Byron, family members and friends : England, 1788-1855.</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:i/custodianCorporateBody.en</td>
+												<td>rdaio:custodianCorporateBody.en</td>
 												<td>viaf:139537973 # Morgan Library & Museum</td>
 											</tr>
 										</tbody>
@@ -715,22 +731,37 @@
 											</tr>
 											<tr>
 												<td>&lt;ada/movie_ada&gt;</td>
-												<td>rda:i/titleOfItem.en</td>
+												<td>rdf:type</td>
+												<td>rdac:Item.en</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>rdaid:titleOfItem.en</td>
 												<td>“Conceiving Ada”^^xsd:string</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:i/categoryOfItem.en</td>
+												<td>rdaio:categoryOfItem.en</td>
 												<td>fabio:Film</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:u/subject.en</td>
+												<td>rdau:publisher.en</td>
+												<td>viaf: 135244988 #Microcinema, Inc.</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>rdaio:custodianCorporateBody.en</td>
+												<td>viaf: 977145857891723021009 # LACMA Libraries</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>rdau:subject.en</td>
 												<td>dbr:History_of_computing_hardware</td>
 											</tr>
 											<tr>
 												<td></td>
-												<td>rda:u/subject.en</td>
+												<td>rdau:subject.en</td>
 												<td>&lt;person/ada_lovelace&gt;</td>
 											</tr>
 											<tr>
@@ -844,7 +875,7 @@
 											<tr>
 												<td></td>
 												<td>oad:hasExtentType</td>
-												<td>fabio:JournalArticle</td>
+												<td>fabio:Preprint</td>
 											</tr>
 											<tr>
 												<td></td>
