@@ -58,7 +58,8 @@
 @prefix lccn: &lt;https://lccn.loc.gov/&gt;.
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt;.
 @prefix rdac: &lt;http://rdaregistry.info/Elements/c/&gt;.
-@prefix rdai: &lt;http://rdaregistry.info/Elements/i/&gt;.
+@prefix rdaio: &lt;http://rdaregistry.info/Elements/i/object/&gt;.
+@prefix rdaid: &lt;http://rdaregistry.info/Elements/i/datatype/&gt;.
 @prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt;.
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;.
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
@@ -78,12 +79,12 @@
 
 &lt;object/sketch_analytical_engine&gt;
 	rdf:type rdac:Item.en;
-	rdai:titleOfItem.en "Sketch of the Analytical Engine invented by Charles Babbage ... 
+	rdaid:titleOfItem.en "Sketch of the Analytical Engine invented by Charles Babbage ... 
 			     with notes by the translator. Extracted from the 'Scientific Memoirs,.'etc."^^xsd:string;
-	rdai:categoryOfItem.en fabio:Book;
+	rdaio:categoryOfItem.en fabio:Book;
 	rdau:publisher.en viaf:129445994; #R. & J. E. Taylor;
 	rdau:subject.en dbr:Analytical_Engine, &lt;person/charles_babbage&gt;;
-	rdai:custodianCorporateBody.en viaf:121814978;
+	rdaio:custodianCorporateBody.en viaf:121814978;
 	rdau:translator.en &lt;person/ada_lovelace&gt;;
 	rdau:annotator.en &lt;person/ada_lovelace&gt;;
 	rdau:notesOnItem.en "The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace in which she describes 
