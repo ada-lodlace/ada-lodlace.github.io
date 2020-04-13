@@ -30,14 +30,15 @@
 
 <object/sketch_analytical_engine>
 	rdf:type rdac:Item.en;
-	rdai:titleOfItem.en "Sketch of the Analytical Engine invented by Charles Babbage ... with notes by the translator. Extracted from the 'Scientific Memoirs,.'etc."^^xsd:string;
-	rdai:categoryOfItem.en fabio:Book;
+	rdaid:titleOfItem.en "Sketch of the Analytical Engine invented by Charles Babbage ... with notes by the translator. Extracted from the 'Scientific Memoirs,.'etc."^^xsd:string;
+	rdaio:categoryOfItem.en fabio:Book;
 	rdau:publisher.en viaf:129445994; #R. & J. E. Taylor;
 	rdau:subject.en dbr:Analytical_Engine, <person/charles_babbage>;
-	rdai:custodianCorporateBody.en viaf:121814978;
+	rdaio:custodianCorporateBody.en viaf:121814978;
 	rdau:translator.en <person/ada_lovelace>;
 	rdau:annotator.en <person/ada_lovelace>;
-	rdau:notesOnItem.en "The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace in which she describes the first algorithm in history."^^xsd:string.
+	rdau:notesOnItem.en "The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace in which she describes the first algorithm in history."^^xsd:string;
+	rdfs:seeAlso <https://www.fourmilab.ch/babbage/sketch.html>.
 
 
 <person/ada_lovelace>	
