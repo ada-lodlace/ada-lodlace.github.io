@@ -9,8 +9,8 @@
 @prefix lccn: <https://lccn.loc.gov/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdac: <http://rdaregistry.info/Elements/c/>.
-@prefix rdaio: <http://rdaregistry.info/Elements/i/datatype/>.
-@prefix rdaid: <http://rdaregistry.info/Elements/i/object/>.
+@prefix rdaio: <http://rdaregistry.info/Elements/i/object/>.
+@prefix rdaid: <http://rdaregistry.info/Elements/i/datatype/>.
 @prefix rdau: <http://rdaregistry.info/Elements/u/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
@@ -30,14 +30,14 @@
 
 <object/sketch_analytical_engine>
 	rdf:type rdac:Item.en;
-	rdaid:titleOfItem.en "Sketch of the Analytical Engine invented by Charles Babbage ... with notes by the translator. Extracted from the 'Scientific Memoirs,.'etc."^^xsd:string;
-	rdaio:categoryOfItem.en fabio:Book;
-	rdau:publisher.en viaf:129445994; #R. & J. E. Taylor;
-	rdau:subject.en dbr:Analytical_Engine, <person/charles_babbage>;
-	rdaio:custodianCorporateBody.en viaf:121814978;
-	rdau:translator.en <person/ada_lovelace>;
-	rdau:annotator.en <person/ada_lovelace>;
-	rdau:notesOnItem.en "The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace in which she describes the first algorithm in history."^^xsd:string;
+	rdaid:P40082 "Sketch of the Analytical Engine invented by Charles Babbage ... with notes by the translator. Extracted from the 'Scientific Memoirs,.'etc."^^xsd:string;
+	rdaio:P40096 fabio:Book;
+	rdau:P60444 viaf:129445994; #R. & J. E. Taylor;
+	rdau:P60805 dbr:Analytical_Engine, <person/charles_babbage>;
+	rdaio:P40135 viaf:121814978;
+	rdau:P60385 <person/ada_lovelace>;
+	rdau:P60464 <person/ada_lovelace>;
+	rdaid:P40028 "The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace in which she describes the first algorithm in history."^^xsd:string;
 	rdfs:seeAlso <https://www.fourmilab.ch/babbage/sketch.html>.
 
 
